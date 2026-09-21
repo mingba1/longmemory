@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "longmemory"
+version = "0.1.0"
+description = "教学向长期记忆 AI 助手：画像 + 情景向量 + 上下文裁剪，不是把历史原样拼进 prompt。"
+requires-python = ">=3.9"
+dependencies = [
+  "numpy>=1.26.0",
+  "httpx>=0.27.0",
+  "sentence-transformers>=3.0.0; python_version < '3.14'",
+  "torch>=2.2.0; python_version < '3.14'",
+]
+
+[project.scripts]
+longmemory = "longmemory.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

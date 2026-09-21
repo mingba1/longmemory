@@ -1,0 +1,12 @@
+data/users/
+data/demo_users/
+.venv/
+__pycache__/
+*.pyc
+.env
+*.egg-info/
+src/*.egg-info/
+dist/
+build/
+.pytest_cache/
+uv.lock
